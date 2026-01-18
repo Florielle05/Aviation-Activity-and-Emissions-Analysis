@@ -122,47 +122,26 @@ E- obtaining the main axes
 ---
 
 ## 7. Interpretation of Principal Components
-The saturation matrix allows us to project the axes and observe their dependencies on the previous variables. With this last one, we notice that:
+The saturation matrix allows us to project the axes and observe their dependencies on the previous variables. 
+<img width="513" height="238" alt="image" src="https://github.com/user-attachments/assets/7712e4d6-e57f-434b-86de-ae3f40d96e9b" />
+With this last one, we notice that:
 - PC1 mainly captures overall aviation activity (high loadings on passengers and freight).
 - PC2 reflects structural differences between passenger-dominated and freight-dominated countries.
 - Countries with high PC1 scores are those with both high traffic and high emissions.
-******
-CODE: Indicator construction  
-→ Cells computing emissions intensity metrics
-******
 
-******
-TABLE or GRAPH: Emissions per passenger by country  
-→ Bar chart or ranked table
-******
+After cleaning, standardizing, studying, analyzing, and reducing the components of the data, we will study the relationship between aviation and total greenhouse gas emissions. The first step is to import the greenhouse gas data, clean it again:
+```
+data_gaz = pd.read_csv('/kaggle/input/gaz-effet-serre/API_EN.GHG.ALL.PC.CE.AR5_DS2_en_csv_v2_32372.csv',sep=",",
+    quotechar='"',
+    encoding='utf-8-sig',
+    skiprows=4  )
+data_gaz = data_gaz.loc[:,['Country Name','2013', '2014', '2015',	'2016',	'2017',	'2018',	'2019',	'2020']]
+data_gaz = data_gaz.dropna()
+data_gaz = data_gaz.melt(id_vars='Country Name', var_name='Year', value_name='Total greenhouse gas emissions')
+data_gaz['Year'] = data_gaz['Year'].astype(int)
+```
+and combine it with the axes to create a single dataset. Here is a preview of it:
 
-These indicators reveal substantial heterogeneity across countries with similar total emission levels.
-
-
-******
-CODE: Indicator construction  
-→ Cells computing emissions intensity metrics
-******
-
-******
-TABLE or GRAPH: Emissions per passenger by country  
-→ Bar chart or ranked table
-******
-
-These indicators reveal substantial heterogeneity across countries with similar total emission levels.
-
-
-******
-CODE: Indicator construction  
-→ Cells computing emissions intensity metrics
-******
-
-******
-TABLE or GRAPH: Emissions per passenger by country  
-→ Bar chart or ranked table
-******
-
-These indicators reveal substantial heterogeneity across countries with similar total emission levels.
 
 ---
 
