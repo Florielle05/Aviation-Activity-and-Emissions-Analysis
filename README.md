@@ -87,7 +87,12 @@ The analysis focuses on:
 - Cross-country comparisons
 - Identification of scale effects and outliers
 
-## scatter plots of different variables as a function of CO2 emission
+---
+
+## 5. Relationship Between Aviation Activity and Emissions
+To assess whether emissions are primarily driven by activity scale, direct relationships between aviation activity indicators and emissions are analyzed.
+
+## scatter plot of Aviation activity variables as a function of CO2 emission
 ```
 sns.scatterplot(data = X, x = 'Total annual CO₂ emissions from aviation', y = 'Nombre de passagers', color = 'blue')
 sns.scatterplot(data = X, x = 'Total annual CO₂ emissions from aviation', y = 'fret(TonnesMbyKm)', color = 'red')
@@ -95,16 +100,8 @@ sns.scatterplot(data = X, x = 'Total annual CO₂ emissions from aviation', y = 
 sns.scatterplot(data = X, x = 'Total annual CO₂ emissions from aviation', y = 'Carburant utilise', color = 'orange')
 ```
 Result 
+<img width="566" height="430" alt="image" src="https://github.com/user-attachments/assets/be35b389-0cd1-417f-acda-158f9cc21a32" />
 
----
-
-## 5. Relationship Between Aviation Activity and Emissions
-To assess whether emissions are primarily driven by activity scale, direct relationships between aviation activity indicators and emissions are analyzed.
-
-******
-GRAPH: Aviation activity vs emissions  
-→ Scatter plot (e.g. passengers vs emissions)
-******
 
 The results show a **strong positive relationship** between aviation activity and emissions, suggesting that scale is a dominant driver.
 
@@ -115,29 +112,12 @@ To move beyond individual variables, PCA is applied to aviation activity indicat
 - Reduce dimensionality
 - Separate **overall scale effects** from **structural differences**
 
-******
-CODE: PCA computation  
-→ Cells performing normalization, PCA fitting, and projection
-******
+A- Correlation matrix R
+B- Sorted eigenvector matrix
+C- Principal component matrix F
+D- Saturation Matrix S
+E- obtaining the main axes
 
-******
-GRAPH: PCA explained variance  
-→ Cumulative explained variance plot
-******
-
-******
-GRAPH: PCA projection (PC1 vs PC2)  
-→ Scatter plot of countries in PCA space
-******
-
-**Interpretation**
-- **PC1** captures the overall scale of aviation activity  
-- **PC2** reflects structural differences (e.g. passenger-oriented vs freight-oriented systems)
-
-******
-GRAPH: Emissions vs PC1  
-→ Scatter plot showing alignment between emissions and activity scale
-******
 
 ---
 
