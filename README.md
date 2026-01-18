@@ -141,8 +141,11 @@ data_gaz = data_gaz.melt(id_vars='Country Name', var_name='Year', value_name='To
 data_gaz['Year'] = data_gaz['Year'].astype(int)
 ```
 and combine it with the axes to create a single dataset. Here is a preview of it:
+<img width="624" height="282" alt="image" src="https://github.com/user-attachments/assets/e99ef3ca-ef7b-4efc-a5a3-b378336f0993" />
 
+After that, we create a line plot of the variables, axis 1, axis 2, and greenhouse gas emissions, and we obtain this:
 
+The figure suggests a strong co-movement between total aviation-related greenhouse gas emissions and the first principal component (PC1), interpreted as an indicator of the overall scale of air traffic. In contrast, the second principal component (PC2), associated with structural differences between passenger- and freight-oriented systems, shows a weaker correlation with emissions. These results indicate that variations in emissions are more closely linked to the volume of activity than to the structure of air traffic, which supports the use of intensity indicators for relevant international comparisons.
 ---
 
 ## 8. Limitations
