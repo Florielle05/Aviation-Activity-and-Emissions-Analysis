@@ -101,7 +101,11 @@ Future work could include scenario analysis or anomaly detection to identify ove
 
 ## Why This Project Matters
 This project demonstrates the ability to:
+
 clean and merge real-world datasets
+
 apply dimensionality reduction meaningfully
+
 move from exploratory analysis to decision-oriented indicators
+
 communicate results clearly to non-technical stakeholders
