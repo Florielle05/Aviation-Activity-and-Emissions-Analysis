@@ -87,8 +87,9 @@ Open the notebook:
 ```bash
 jupyter notebook notebook/notebook-analyse.ipynb
 ```
+---
 
-Limitations and Next Steps
+## Limitations and Next Steps
 
 The analysis focuses on aggregated country-level data and does not capture airline-level efficiency.
 
@@ -96,15 +97,11 @@ Results are descriptive and explanatory rather than predictive.
 
 Future work could include scenario analysis or anomaly detection to identify over- or under-performing systems.
 
+---
 
-Why This Project Matters
-
+## Why This Project Matters
 This project demonstrates the ability to:
-
 clean and merge real-world datasets
-
 apply dimensionality reduction meaningfully
-
 move from exploratory analysis to decision-oriented indicators
-
 communicate results clearly to non-technical stakeholders
