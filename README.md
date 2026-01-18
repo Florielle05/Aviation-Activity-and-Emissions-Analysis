@@ -73,11 +73,9 @@ Main preprocessing steps include:
 - Merging datasets into a single country–year table
 - Normalization of key variables for comparative analysis
 
-
-******
 TABLE: Preview of cleaned merged dataset  
-→ `df.head()` or equivalent display of the final country–year dataset
-******
+<img width="737" height="337" alt="image" src="https://github.com/user-attachments/assets/3217e438-e5aa-4b16-97dd-5f0711587e30" />
+
 
 ---
 
