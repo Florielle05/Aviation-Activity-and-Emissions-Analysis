@@ -67,7 +67,7 @@ These indicators allow fairer comparisons across countries with different aviati
 │ └── notebook-analyse.ipynb
 ├── data/
 │ └── (cleaned datasets or data preparation instructions)
-├── requirements.txt
+├── requirement.txt
 └── README.md
 ```
 
