@@ -87,15 +87,14 @@ The analysis focuses on:
 - Cross-country comparisons
 - Identification of scale effects and outliers
 
-******
-GRAPH: Distribution of aviation emissions  
-→ Histogram showing skewness and concentration of emissions
-******
-
-******
-GRAPH: Cross-country comparison of aviation activity or emissions  
-→ Bar chart or line plot highlighting differences between countries
-******
+## scatter plots of different variables as a function of CO2 emission
+```
+sns.scatterplot(data = X, x = 'Total annual CO₂ emissions from aviation', y = 'Nombre de passagers', color = 'blue')
+sns.scatterplot(data = X, x = 'Total annual CO₂ emissions from aviation', y = 'fret(TonnesMbyKm)', color = 'red')
+sns.scatterplot(data = X, x = 'Total annual CO₂ emissions from aviation', y = 'Departs de Transporteur', color = 'green')
+sns.scatterplot(data = X, x = 'Total annual CO₂ emissions from aviation', y = 'Carburant utilise', color = 'orange')
+```
+Result 
 
 ---
 
