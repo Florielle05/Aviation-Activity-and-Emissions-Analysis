@@ -61,4 +61,50 @@ These indicators allow fairer comparisons across countries with different aviati
 ---
 
 ## Repository Structure
+```bash
+.
+├── notebook/
+│ └── notebook-analyse.ipynb
+├── data/
+│ └── (cleaned datasets or data preparation instructions)
+├── outputs/
+│ └── figures and tables generated in the analysis
+├── requirements.txt
+└── README.md
+```
 
+
+---
+
+## How to Run
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Open the notebook:
+```bash
+jupyter notebook notebook/notebook-analyse.ipynb
+```
+
+Limitations and Next Steps
+
+The analysis focuses on aggregated country-level data and does not capture airline-level efficiency.
+
+Results are descriptive and explanatory rather than predictive.
+
+Future work could include scenario analysis or anomaly detection to identify over- or under-performing systems.
+
+
+Why This Project Matters
+
+This project demonstrates the ability to:
+
+clean and merge real-world datasets
+
+apply dimensionality reduction meaningfully
+
+move from exploratory analysis to decision-oriented indicators
+
+communicate results clearly to non-technical stakeholders
