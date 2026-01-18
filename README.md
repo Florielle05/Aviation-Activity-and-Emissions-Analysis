@@ -144,6 +144,7 @@ and combine it with the axes to create a single dataset. Here is a preview of it
 <img width="624" height="282" alt="image" src="https://github.com/user-attachments/assets/e99ef3ca-ef7b-4efc-a5a3-b378336f0993" />
 
 After that, we create a line plot of the variables, axis 1, axis 2, and greenhouse gas emissions, and we obtain this:
+<img width="554" height="417" alt="image" src="https://github.com/user-attachments/assets/9dd4af62-1b00-4c82-9d49-18d78d9df98a" />
 
 The figure suggests a strong co-movement between total aviation-related greenhouse gas emissions and the first principal component (PC1), interpreted as an indicator of the overall scale of air traffic. In contrast, the second principal component (PC2), associated with structural differences between passenger- and freight-oriented systems, shows a weaker correlation with emissions. These results indicate that variations in emissions are more closely linked to the volume of activity than to the structure of air traffic, which supports the use of intensity indicators for relevant international comparisons.
 ---
