@@ -150,6 +150,7 @@ The figure suggests a strong co-movement between total aviation-related greenhou
 
 To complement the overall analysis, visualizations at the scale of several countries were also produced, illustrating the joint evolution of the principal component analysis (PCA) axes and aviation-related CO₂ emissions. 
 
+<img width="702" height="668" alt="image" src="https://github.com/user-attachments/assets/f5384596-86ae-455a-ab34-1835459af66f" />
 
 
 These country-by-country analyses highlight heterogeneous dynamics, with varying relationships between the principal components and emissions, confirming the strong dependence on national context. They thus underscore the limitations of a purely temporal interpretation of the PCA axes at the individual level and reinforce the relevance of a comparative analysis between countries for interpreting the overall results.
