@@ -117,14 +117,40 @@ B- Sorted eigenvector matrix
 C- Principal component matrix F
 D- Saturation Matrix S
 E- obtaining the main axes
-
+<img width="402" height="361" alt="image" src="https://github.com/user-attachments/assets/f7e7d1bc-4a08-451b-b6be-83aa361a3e36" />
 
 ---
 
-## 7. Interpretable Indicators
-To allow fairer comparisons between countries, intensity-based indicators are constructed, such as:
-- Emissions per passenger
-- Relative contribution to global aviation emissions
+## 7. Interpretation of Principal Components
+The saturation matrix allows us to project the axes and observe their dependencies on the previous variables. With this last one, we notice that:
+- PC1 mainly captures overall aviation activity (high loadings on passengers and freight).
+- PC2 reflects structural differences between passenger-dominated and freight-dominated countries.
+- Countries with high PC1 scores are those with both high traffic and high emissions.
+******
+CODE: Indicator construction  
+→ Cells computing emissions intensity metrics
+******
+
+******
+TABLE or GRAPH: Emissions per passenger by country  
+→ Bar chart or ranked table
+******
+
+These indicators reveal substantial heterogeneity across countries with similar total emission levels.
+
+
+******
+CODE: Indicator construction  
+→ Cells computing emissions intensity metrics
+******
+
+******
+TABLE or GRAPH: Emissions per passenger by country  
+→ Bar chart or ranked table
+******
+
+These indicators reveal substantial heterogeneity across countries with similar total emission levels.
+
 
 ******
 CODE: Indicator construction  
